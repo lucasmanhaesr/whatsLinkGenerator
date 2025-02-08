@@ -12,15 +12,16 @@
 
     <form id="formulario" class="form center">
         
-        <label for="valor">Número</label>
+        <label for="valor">Número:</label>
         <div class="input-group mb-3">
             <input type="tel" class="form-control" id="tel" placeholder="(11) 99999-9999" aria-label="Insira seu telefone com DDD aqui" required autofocus>
         </div>
         
-        <label for="valor">Mensagem (opcional)</label>
-        <div class="input-group">
-            <input type="text" class="form-control" id="text" placeholder="Olá, quero saber mais sobre o produto..." aria-label="Insira seu texto aqui">
-            <button class="btn btn-success" type="submit">Gerar Link</button>
+        <label for="valor">Mensagem (Opcional):</label>
+        <textarea name="text" id="text" class="form-control" rows="3" placeholder="Olá, quero saber mais sobre o produto..."></textarea>
+
+        <div class="input-group mensagem">
+            <button id="botao-gerar-link" class="btn btn-success" type="submit">Gerar Link</button>
         </div>
     
     </form>
